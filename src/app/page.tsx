@@ -208,6 +208,12 @@ export default function LandingPage() {
             }
           ]}
           textboxLayout="default"
+          buttons={[
+            {
+              text: "Book Your Stay",
+              href: "#contact"
+            }
+          ]}
         />
       </div>
 
