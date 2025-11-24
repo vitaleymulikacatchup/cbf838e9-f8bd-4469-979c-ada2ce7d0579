@@ -9,7 +9,7 @@ import FeatureCardNine from '@/components/sections/feature/FeatureCardNine';
 import TestimonialCardFour from '@/components/sections/testimonial/TestimonialCardFour';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import { Star, Utensils, Droplets, Users, Mail } from 'lucide-react';
+import { Star, Utensils, Droplets, Users, Mail, Award } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -178,7 +178,9 @@ export default function LandingPage() {
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardFour
           title="What Our Guests Say"
-          description="Read reviews from travelers who have experienced our world-class hospitality"
+          description="Read reviews from travelers who have experienced our world-class hospitality. Average rating: 4.9/5 from 2,700+ verified reviews"
+          tag="Testimonials"
+          tagIcon={Award}
           testimonials={[
             {
               id: "1",
