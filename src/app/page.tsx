@@ -134,13 +134,23 @@ export default function LandingPage() {
 
       <div id="amenities" data-section="amenities">
         <FeatureCardNine
-          title="World-Class Amenities"
-          description="Discover our comprehensive facilities designed for relaxation and recreation"
+          title="Luxury Amenities That Transform Your Stay"
+          description="Immerse yourself in exceptional facilities designed to elevate your experience with unparalleled comfort and recreation"
+          buttons={[
+            {
+              text: "Book Pool Experience",
+              href: "#contact"
+            },
+            {
+              text: "Reserve Spa Treatment",
+              href: "#contact"
+            }
+          ]}
           features={[
             {
               id: 1,
               title: "Olympic Pool & Spa",
-              description: "Luxurious swimming pool with heated facilities and world-class spa treatments",
+              description: "Dive into luxury with our heated Olympic-size pool and rejuvenating spa treatments that melt away stress. Book your poolside cabana or therapeutic massage to complete your perfect day.",
               phoneOne: {
                 imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SAuZG11YN2jMHmu0FsR9Di3IL/uploaded-1763982228948-8leu4yfl.jpg"
               },
@@ -151,7 +161,7 @@ export default function LandingPage() {
             {
               id: 2,
               title: "Fine Dining & Fitness",
-              description: "Gourmet restaurants and state-of-the-art fitness center with expert trainers",
+              description: "Savor gourmet cuisine at our award-winning restaurants and maintain your wellness routine in our state-of-the-art fitness center. Reserve your table for an unforgettable culinary journey or book a personal training session.",
               phoneOne: {
                 imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SAuZG11YN2jMHmu0FsR9Di3IL/uploaded-1763982230404-ah4bgmtc.jpg"
               },
@@ -161,7 +171,7 @@ export default function LandingPage() {
             }
           ]}
           showStepNumbers={true}
-          textboxLayout="default"
+          textboxLayout="split-actions"
         />
       </div>
 
